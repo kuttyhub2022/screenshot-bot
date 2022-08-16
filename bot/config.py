@@ -6,7 +6,7 @@ class Config:
     API_ID = int(os.environ.get("API_ID","4682685"))
     API_HASH = os.environ.get("API_HASH","3eba5d471162181b8a3f7f5c0a23c307")
     BOT_TOKEN = os.environ.get("BOT_TOKEN","5554250763:AAG1RTonE64VPQPfAucg6RN49nFTj7SMq04")
-    SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
+    SESSION_NAME = os.environ.get("SESSION_NAME","shoty")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","-1001655508131"))
     DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://movie:search@cluster0.3xio6pa.mongodb.net/?retryWrites=true&w=majority")
     AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "945284066").split(" ")]
