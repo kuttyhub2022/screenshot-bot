@@ -25,10 +25,8 @@ class ScreenShotBot(Client):
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             plugins=dict(root="bot/plugins"),
-        
-  self.process_pool = Worker()
-  self.CHAT_FLOOD = defaultdict(
-       lambda: int(time.time()) - Config.SLOW_SPEED_DELAY - 1 )
+            self.process_pool = Worker()
+            self.CHAT_FLOOD = defaultdict(lambda: int(time.time()) - Config.SLOW_SPEED_DELAY - 1 )
         self.broadcast_ids = {}
 
     async def start(self):
